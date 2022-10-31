@@ -30,7 +30,7 @@ startus dunst
 startus /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 startus_polybar
 # background
-/usr/bin/feh --bg-scale "${XDG_CONFIG_HOME:-$HOME}/Pictures/wallapaper.png"
+/usr/bin/feh --bg-scale "${XDG_CONFIG_HOME:-$HOME}/Pictures/wallpaper.png"
 
 # mouse
 xsetroot -cursor_name left_ptr &
