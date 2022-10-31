@@ -1,0 +1,17 @@
+configuration {
+    show-icons: false;
+    icon-theme: "papirus-dark";
+    monitor: "-1";
+    case-sensitive: false;
+    drun-display-format: "{name}";
+    drun-match-fields: "name,generic,exec";
+    terminal: "alacritty";
+    sort: true;
+    sorting-method: "fzf";
+}
+
+@theme "theme.rasi"
+
+window {
+    width: 22%;
+}
