@@ -6,7 +6,8 @@ source $BSPWM_CONFIG/functions.sh
 
 # ] ---- SCREENS ---- [
 
-xrandr --output DisplayPort-0 --mode 2560x1440 --rate 144 --pos 0x0 --rotate normal --output DisplayPort-1 --primary --mode 2560x1440 --rate 144 --pos 2560x0 --rotate normal --output HDMI-A-0 --off --output HDMI-A-1 --off --output DVI-D-0 --off
+
+#xrandr --output ...
 
 # ] ---- WORKSPACES ---- [ 
 
@@ -21,16 +22,15 @@ bspc rule -a "*:*:Discord" desktop=1 -o
 
 # autostart
 startus firefox
-startus discord 
-startus flameshot 
-startus nm-applet 
-startus sxhkd 
-startus parcellite
+##startus discord
+startus flameshot
+startus nm-applet
+startus sxhkd
 startus dunst 
 startus /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 startus_polybar
-rm -rf /run/user/$(id -u leier)/systemd/transient/bspwm-background.{timer,service} ; systemctl --user daemon-reload ; systemctl --user reset-failed ; sleep 1
-systemd-run --on-calendar="*:0/45" --on-active=0s --unit=bspwm-background --user --setenv=DISPLAY=:0 /bin/bash -c '[[ $(pgrep -x bspwm) ]] && /usr/bin/feh --bg-scale "$(find ~/Pictures/wallpapers |shuf|head -n 1)"'
+# background
+/usr/bin/feh --bg-scale "${XDG_CONFIG_HOME:-$HOME}/Pictures/wallapaper.png"
 
 # mouse
 xsetroot -cursor_name left_ptr &

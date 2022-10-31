@@ -96,7 +96,8 @@ textbox {
 window {
     padding: 2% 1%;
     border-radius: 10mm;
-    border: 0;
+    border: 1px dash;
+    border-color: var(magenta);
     location: center;
     transparency: "real"; // requires picom
 }

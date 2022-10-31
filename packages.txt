@@ -1,3 +1,3 @@
-sudo pacman -Syu rofi vim i3-lock bspwm sxhkd networkmanager xorg gdm mousepad firefox picom flameshot
+sudo pacman -Syu rofi vim i3-lock bspwm sxhkd networkmanager xorg gdm mousepad firefox picom flameshot alacritty ttf-hack nm-connection-editor network-manager-applet pavucontrol dunst polkit-gnome arandr
 
-yay polybar
+yay polybar rbw
