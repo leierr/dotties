@@ -1,0 +1,3 @@
+sudo pacman -Syu rofi vim i3-lock bspwm sxhkd networkmanager xorg gdm mousepad firefox picom flameshot
+
+yay polybar

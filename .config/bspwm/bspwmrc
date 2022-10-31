@@ -1,0 +1,57 @@
+#!/bin/bash
+
+# ] ---- IMPORTS ---- [
+export BSPWM_CONFIG="${XDG_CONFIG_HOME:-$HOME/.config}/bspwm"
+source $BSPWM_CONFIG/functions.sh
+
+# ] ---- SCREENS ---- [
+
+xrandr --output DisplayPort-0 --mode 2560x1440 --rate 144 --pos 0x0 --rotate normal --output DisplayPort-1 --primary --mode 2560x1440 --rate 144 --pos 2560x0 --rotate normal --output HDMI-A-0 --off --output HDMI-A-1 --off --output DVI-D-0 --off
+
+# ] ---- WORKSPACES ---- [ 
+
+divide_workspaces
+
+# ] ---- CONFIG ---- [
+
+# rules
+bspc rule -a "Alacritty:floaty" state=floating center=true
+bspc rule -a firefox desktop=2 -o
+bspc rule -a "*:*:Discord" desktop=1 -o
+
+# autostart
+startus firefox
+startus discord 
+startus flameshot 
+startus nm-applet 
+startus sxhkd 
+startus parcellite
+startus dunst 
+startus /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+startus_polybar
+rm -rf /run/user/$(id -u leier)/systemd/transient/bspwm-background.{timer,service} ; systemctl --user daemon-reload ; systemctl --user reset-failed ; sleep 1
+systemd-run --on-calendar="*:0/45" --on-active=0s --unit=bspwm-background --user --setenv=DISPLAY=:0 /bin/bash -c '[[ $(pgrep -x bspwm) ]] && /usr/bin/feh --bg-scale "$(find ~/Pictures/wallpapers |shuf|head -n 1)"'
+
+# mouse
+xsetroot -cursor_name left_ptr &
+bspc config click_to_focus button1
+bspc config pointer_follows_monitor true
+
+# windows and borders
+bspc config border_width 2
+bspc config window_gap 10
+bspc config single_monocle true
+bspc config borderless_monocle true
+bspc config gapless_monocle true
+# venter på de featuresene
+#bspc config borderless_singleton true
+#bspc config gapless_singleton true
+
+# colors
+bspc config presel_feedback_color "#1081d6"
+bspc config normal_border_color "#30363d"
+bspc config active_border_color "#30363d"
+bspc config focused_border_color "#1081d6"
+#bspc config remove_disabled_monitors true
+#bspc config remove_unplugged_monitors true
+
