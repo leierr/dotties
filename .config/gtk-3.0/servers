@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+  <bookmark href="sftp://admin@192.168.38.16/" added="2021-02-18T11:46:24.669843Z" modified="2021-02-18T11:46:24.669849Z" visited="2021-02-18T11:46:24.669845Z">
+    <title>/ on 192.168.38.16</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;org.gnome.Nautilus %u&apos;" modified="2021-02-18T11:46:24.669846Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="ftp://admin@192.168.38.16/" added="2021-02-18T11:52:53.210968Z" modified="2021-02-18T11:52:53.210973Z" visited="2021-02-18T11:52:53.210969Z">
+    <title>/ on 192.168.38.16</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;org.gnome.Nautilus %u&apos;" modified="2021-02-18T11:52:53.210971Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="ftp://leier@192.168.38.16/" added="2021-02-18T11:54:16.844539Z" modified="2021-02-18T18:08:53.230213Z" visited="2021-02-18T18:08:53.230209Z">
+    <title>/ on 192.168.38.16</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;org.gnome.Nautilus %u&apos;" modified="2021-02-18T18:08:53.230211Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="ftp://leier@192.168.38.78/" added="2021-02-21T23:30:23.976656Z" modified="2021-02-21T23:30:23.976660Z" visited="2021-02-21T23:30:23.976657Z">
+    <title>/ on 192.168.38.78</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;org.gnome.Nautilus %u&apos;" modified="2021-02-21T23:30:23.976658Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="sftp://leier@192.168.38.77/" added="2021-03-26T11:05:52.992636Z" modified="2021-04-03T17:04:25.722928Z" visited="2021-04-03T17:04:25.722925Z">
+    <title>/ on 192.168.38.77</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;org.gnome.Nautilus %u&apos;" modified="2021-04-03T17:04:25.722926Z" count="7"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="ftp://192.168.0.95/" added="2021-06-09T08:23:47.922569Z" modified="2021-06-09T09:19:52.111619Z" visited="2021-06-09T09:19:52.111616Z">
+    <title>/ on 192.168.0.95</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;org.gnome.Nautilus %u&apos;" modified="2021-06-09T09:19:52.111617Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="sftp://10.0.0.2/" added="2021-07-18T01:35:40.718192Z" modified="2021-07-18T01:35:40.718197Z" visited="2021-07-18T01:35:40.718194Z">
+    <title>/ on 10.0.0.2</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;org.gnome.Nautilus %u&apos;" modified="2021-07-18T01:35:40.718195Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>
